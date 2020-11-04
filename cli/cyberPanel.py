@@ -1519,7 +1519,7 @@ def main():
 
     elif args.function == "installJoomla":
 
-        completeCommandExample = 'cyberpanel installJoomla --domainName cyberpanel.net --password helloworld --siteTitle "WordPress Site" --path helloworld (this is optional)'
+        completeCommandExample = 'cyberpanel installJoomla --domainName cyberpanel.net --password helloworld --siteTitle "Joomla Site" --path helloworld (this is optional)'
 
         if not args.domainName:
             print("\n\nPlease enter Domain name. For example:\n\n" + completeCommandExample + "\n\n")
