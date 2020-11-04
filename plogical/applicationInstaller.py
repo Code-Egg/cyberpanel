@@ -962,10 +962,10 @@ $parameters = array(
             statusFile.close()
 
 
-            command = 'wget https://raw.githubusercontent.com/litespeedtech/lscache-joomla/master/package/lscache-1.3.1.zip -O /usr/local/CyberCP/joomla.zip'
+            command = 'wget -q https://raw.githubusercontent.com/litespeedtech/lscache-joomla/master/package/lscache-1.3.1.zip -O /usr/local/CyberCP/joomla.zip'
             ProcessUtilities.executioner(command)
 
-            command = 'unzip -o /usr/local/CyberCP/joomla.zip -d /usr/local/CyberCP/'
+            command = 'unzip -q -o /usr/local/CyberCP/joomla.zip -d /usr/local/CyberCP/'
             ProcessUtilities.executioner(command)
 
             command = '%s extension:installfile %s --www %s /usr/local/CyberCP/lscache_plugin.zip' % (joomlaPath, dbUser, finalPath)
